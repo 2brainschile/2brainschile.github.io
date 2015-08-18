@@ -46,7 +46,8 @@ $palette: (
 //				SIZES
 //==================================
 // MAXIMUM CONTENT SIZE FOR ROWS / BLOCKS
-$max-content-width: 1100px;
+$max-width: 1100px;
+$max-content-width: $max-width;
 
 $iphone: 320px;
 $iphone6: 375px;
