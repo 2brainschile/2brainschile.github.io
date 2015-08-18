@@ -1,12 +1,56 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <!-- ==========================================
+                      SEO STUFF
+  =============================================== -->
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="{{ site.keywords }}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <meta name="geography" content="Santiago, Chile">
+
+  <!-- FACEBOOK OPEN GRAPH -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="" >
+
+  <!-- TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="">
+  <meta property="twitter:image:src" content="{% if page.hero %}{{ page.hero }}{% else %}http://alexplaza.co/public/img/seo/alexplaza-ux-front-end-dev.png{% endif %}" />
+  <meta name="twitter:url" content="">
+
+
+  <!-- ==========================================
+              ONE CSS TO RULE THEM ALL
+  =============================================== -->
+  <link rel="stylesheet" href="{{ "/public/css/app.min.css" | prepend: site.baseurl }}">
+
+  <!-- ==========================================
+               GOOGLE FONTS
+  =============================================== -->
+
+  <!-- ==========================================
+         Mobile Capability & title
+  =============================================== -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="2Brains">
+
+  <!-- ==========================================
+              touch icons for homescreen
+  =============================================== -->
+  <!-- <link rel="apple-touch-icon" href="{{ "/public/img/touch-i/apple-touch-icon-iphone.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ "/public/img/touch-i/touch-icon-ipad.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ "/public/img/touch-i/touch-icon-iphone-retina.png" | prepend: site.baseurl }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ "/public/img/touch-i/touch-icon-ipad-retina.png" | prepend: site.baseurl }}"> -->
+  <!-- android -->
+  <!-- <link rel="shortcut icon" sizes="196x196" href="{{ "/public/img/touch-i/touch-icon-android.png" | prepend: site.baseurl }}"> -->
 </head>

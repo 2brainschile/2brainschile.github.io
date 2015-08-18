@@ -1,0 +1,26 @@
+.sb-slidebar.sb-right{
+	box-shadow: inset 3px 0px 10px pal(grey, xxx-dark);	
+}
+
+.aside-menu {
+	padding-top: $nav-height + 4;
+}
+
+.aside-list {
+
+	li {
+		display: block;
+		border-bottom: 2px solid pal(grey, dark);
+	}
+
+	.current-menu-item {
+		border-left: 3px solid $primary-color;
+		background-color: pal(grey, xx-dark);
+	}
+
+	a {
+		display: block;
+		color: white;
+		padding: 16px 20px;
+	}
+}

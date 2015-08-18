@@ -1,0 +1,86 @@
+//==================================
+//			COLORS
+//==================================
+$primary-color		: #D1202A;
+$secondary-color	: #333333;
+$grey				: #333333;
+
+$white				: #FEFFFF;
+
+//==================================
+//			PALETTE
+//==================================
+$palette: (
+	primary: (
+		x-light  : lighten($primary-color, 16%),
+		light 	 : lighten($primary-color, 8%),
+		base 	 : $primary-color,
+		dark 	 : darken($primary-color, 8%),
+		x-dark 	 : darken($primary-color, 16%)
+	),
+
+	secondary: (
+		x-light  : lighten($secondary-color, 16%),
+		light 	 : lighten($secondary-color, 8%),
+		base 	 : $secondary-color,
+		dark 	 : darken($secondary-color, 8%),
+		x-dark 	 : darken($secondary-color, 16%)
+	),
+
+	grey: (
+		xxxx-light : lighten($grey, 77.5%),
+		xxx-light : lighten($grey, 60%),
+		xx-light : lighten($grey, 40%),
+		x-light  : lighten($grey, 20%),
+		light 	 : lighten($grey, 10%),
+		base 	 : $grey,
+		dark 	 : darken($grey, 2%),
+		x-dark 	 : darken($grey, 5.5%),
+		xx-dark 	 : darken($grey, 8%),
+		xxx-dark  : darken($grey, 10.6%)
+	)
+);
+
+
+//==================================
+//				SIZES
+//==================================
+// MAXIMUM CONTENT SIZE FOR ROWS / BLOCKS
+$max-content-width: 1100px;
+
+$iphone: 320px;
+$iphone6: 375px;
+$iphone6-plus: 414px;
+
+$small-screen: 420px;
+$medium-screen: 640px;
+$large-screen: 980px;
+
+// BREATH SPACING FOOTER
+$base-spacing: 10px;
+
+$nav-height: 56px;
+
+
+
+
+
+
+//////////////////////////////////////////
+//////////////////////////////////////////
+
+//  		    TYPE
+
+//////////////////////////////////////////
+//////////////////////////////////////////
+//========================================
+//			WHITE TINY TEXT
+//========================================
+%tiny-white-text {
+	font-size: .85rem;
+	color: white;
+}
+
+%text-shadow {
+	text-shadow: 0 1px 3px rgba(0,0,0,.4);
+}

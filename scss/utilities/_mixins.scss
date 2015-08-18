@@ -1,0 +1,48 @@
+@mixin margin-center {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+
+@mixin make-btn(
+	$color: white,
+	$prima: $primary-color,
+	$color-hover: white,
+	$padding: 8px 28px,
+	$border: true,
+	$radius: 3px
+) {
+	border: 1px solid $prima;	
+	color: $color;
+	padding: $padding;
+	background: linear-gradient(transparent 50%, $prima 50%);
+	background-size: 100% 200%;
+	@include transition(all .3s ease-in-out);
+
+	@if ($border) {
+		border-radius: $radius;
+	}
+
+	&:hover,
+	&:focus,
+	&:active, {
+		color: $color-hover;
+		border: 1px solid $prima;
+		background-color: $prima;
+		background-position: 200% 100%;
+	}
+}
+
+
+@mixin make-triangle(
+	$bg: pal(grey),
+	$size: 18px,
+	$position: -1px
+) {
+	@extend %triangle;
+  border-bottom: 18px solid $bg;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  bottom: $position;
+}
