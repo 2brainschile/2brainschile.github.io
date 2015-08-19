@@ -9,7 +9,30 @@ $nav-height: 60px;
 
 .main-nav {
   max-width: $max-width;
-  @include margin-center;
+  height: $nav-height;
 
+  @include margin-center;
+}
+
+.main-nav-list {
+  height: $nav-height;
   @include display(flex);
+  @include justify-content(space-between);
+  @include align-content(center);
+
+
+  li {
+    @include align-self(center);
+  }
+
+  a {
+    display: block;
+    height: $nav-height;
+    color: white;
+    padding: 14px 20px 0;
+
+    &:hover {
+      background-color: lighten(black, 20%);
+    }
+  }
 }
