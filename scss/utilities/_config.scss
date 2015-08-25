@@ -28,7 +28,7 @@ $palette: (
 	),
 
 	grey: (
-		xxxx-light : lighten($grey, 77.5%),
+		xxxx-light : lighten($grey, 68%),
 		xxx-light : lighten($grey, 60%),
 		xx-light : lighten($grey, 40%),
 		x-light  : lighten($grey, 20%),
@@ -53,9 +53,9 @@ $iphone: 320px;
 $iphone6: 375px;
 $iphone6-plus: 414px;
 
-$small-screen: 420px;
-$medium-screen: 640px;
-$large-screen: 980px;
+$small-screen: 520px;
+$medium-screen: 660px;
+$large-screen: 1000px;
 
 // BREATH SPACING FOOTER
 $base-spacing: 10px;

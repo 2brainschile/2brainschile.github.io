@@ -5,6 +5,37 @@
 }
 
 
+@mixin flex-width($col-w, $gutt-w, $total-cols: 12) {
+  $num-cols: 12 / $col-w;
+
+  $gutt-width: $gutt-w * ($num-cols - 1);
+  $col-width: (100 - $gutt-width) / $num-cols;
+
+  $gutter: $gutt-w;
+  $width: $col-width;
+
+  width: $width * 1%;
+  @if ($gutt-w != 0) {
+    margin-right: $gutter * 1%;
+    &:nth-child(#{$num-cols}n + #{$num-cols}) {
+      margin-right: 0;
+    }
+  }
+}
+
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
 @mixin make-btn(
 	$color: white,
 	$prima: $primary-color,
@@ -13,7 +44,7 @@
 	$border: true,
 	$radius: 3px
 ) {
-	border: 1px solid $prima;	
+	border: 1px solid $prima;
 	color: $color;
 	padding: $padding;
 	background: linear-gradient(transparent 50%, $prima 50%);

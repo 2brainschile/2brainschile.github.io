@@ -1,0 +1,11 @@
+@include breakpoint($medium-screen) {
+  .flex-2 {
+    @include flex-width(6, 2);
+  }
+}
+
+@include breakpoint($large-screen) {
+  .flex-3 {
+    @include flex-width(4, 3);
+  }
+}

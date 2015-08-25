@@ -2,7 +2,10 @@
 layout: post
 title:  "Cómo crear una práctica Paleta de Colores con Sass"
 date:   2015-08-15 18:06:10
-categories: jekyll update
+category: css
+categories: css
+tags: scss, css, palette, design, colors, sass maps
+mainimg: /public/img/post-alex/postits.jpg
 ---
 
 Hola amigos
