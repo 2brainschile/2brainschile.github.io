@@ -1983,10 +1983,41 @@ pre code {
 }
 
 .post-item-img {
+  position: relative;
   height: 130px;
   width: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.color-hover {
+  position: absolute;
+  width: 101%;
+  height: 101%;
+}
+
+.color-hover[class*="html"] {
+  background: rgba(248, 195, 0, 0.65);
+}
+
+.color-hover[class*="javascript"] {
+  background: rgba(240, 141, 60, 0.65);
+}
+
+.color-hover[class*="css"] {
+  background: rgba(239, 72, 68, 0.65);
+}
+
+.color-hover[class*="mobile"] {
+  background: rgba(18, 64, 97, 0.65);
+}
+
+.color-hover[class*="ux"] {
+  background: rgba(27, 176, 206, 0.65);
+}
+
+.color-hover[class*="arduino"] {
+  background: rgba(0, 151, 157, 0.65);
 }
 
 .post-item-inner {

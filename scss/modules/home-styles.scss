@@ -30,10 +30,23 @@
 }
 
 .post-item-img {
+  position: relative;
   height: 130px;
   width: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.color-hover {
+  position: absolute;
+  width: 101%;
+  height: 101%;
+}
+
+@each $cat, $color in $category-palette {
+  .color-hover[class*="#{$cat}"] {
+    background: transparentize($color, .35);
+  }
 }
 
 .post-item-inner {
