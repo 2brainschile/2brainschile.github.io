@@ -3,8 +3,10 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-hero" style="background-image: url('{{ page.mainimg }}')">
-    <div class="light-to-read"></div>
+  <header class="post-hero {{ page.category }}" {% if page.mainimg %} style="background-image: url('{{ page.mainimg }}')" {% endif %}>
+    {% if page.mainimg %}
+      <div class="light-to-read"></div>
+    {% endif %}
     <div class="inner-hero">
       <p class="cat-title">{{ page.category }}</p>
       <h1 class="post-title">{{ page.title }}</h1>
