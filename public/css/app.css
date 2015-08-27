@@ -1540,6 +1540,16 @@ body {
   height: 60px;
 }
 
+.logo {
+  margin-top: 3px;
+  height: 30px;
+  width: auto;
+}
+
+.menu-item {
+  text-transform: uppercase;
+}
+
 .main-nav {
   max-width: 1100px;
   height: 60px;
