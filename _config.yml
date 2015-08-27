@@ -12,3 +12,22 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+
+# Authors
+authors:
+  alexplaza:
+    name: Alex Plaza
+    avatar: /public/statics/authors/alexplaza.png
+    email: alex.plaza@2brains.cl
+    web: http://alexplaza.co
+    twitter: klangwiedergabe
+    github: klangwiedergabe
+
+  enrique:
+    name: Enrique
+    avatar: /public/statics/authors/alexplaza.png    
+    email: enrique@2brains.cl
+    web: NA
+    twitter: NA
+    github: NA
