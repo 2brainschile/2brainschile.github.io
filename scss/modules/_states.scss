@@ -1,0 +1,24 @@
+.hide-phone-up {
+  @include breakpoint($iphone6-plus + 101) {
+    display: none;
+  }
+}
+
+.hide-table-up {
+  @include breakpoint($iphone6-plus + 201) {
+    display: none;
+  }
+}
+
+.hide-table-down,
+[id="hide-table-down"] {
+	@include breakpoint(max-width $iphone6-plus + 200) {
+    display: none;
+  }
+}
+
+.hide-phone-down {
+  @include breakpoint(max-width $iphone6-plus + 100) {
+    display: none !important;
+  }
+}

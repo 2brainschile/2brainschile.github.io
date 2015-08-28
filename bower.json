@@ -1,0 +1,24 @@
+{
+  "name": "wp-boiler-front",
+  "version": "0.1",
+  "authors": [
+    "Alex Plaza <plaza.ad@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-breakpoint": "~2.6.1",
+    "bourbon": "~4.2.3",
+    "susy": "~2.2.5",
+    "neat": "~1.7.2"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  }
+}

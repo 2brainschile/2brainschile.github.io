@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-hero {{ page.category }}" {% if page.mainimg %} style="background-image: url('{{ page.mainimg }}')" {% endif %}>
+    {% if page.mainimg %}
+      <div class="light-to-read"></div>
+    {% endif %}
+    <div class="inner-hero">
+      <p class="cat-title">{{ page.category }}</p>
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  {% assign author = site.authors[page.author] %}
+  <div class="author">
+    <img class="author__img" src="{{ author.avatar }}">
+
+    <p class="author__name">
+      {{ author.name }}
+    </p>
+
+    <p class="date">
+      {{ page.date | date: "%b %-d, %Y" }}
+    </p>
+  </div>
+
+  <article class="the-content">
+    {{ content }}
+  </article>
+</div>

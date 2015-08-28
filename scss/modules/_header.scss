@@ -1,0 +1,48 @@
+$nav-height: 60px;
+
+.main-header {
+  background-color: black;
+  width: 100%;
+  position: relative;
+  height: $nav-height;
+}
+
+.logo {
+  margin-top: 3px;
+  height: 30px;
+  width: auto;
+}
+
+.menu-item {
+  text-transform: uppercase;
+}
+
+.main-nav {
+  max-width: $max-width;
+  height: $nav-height;
+
+  @include margin-center;
+}
+
+.main-nav-list {
+  height: $nav-height;
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-content(center);
+
+
+  li {
+    @include align-self(center);
+  }
+
+  a {
+    display: block;
+    height: $nav-height;
+    color: white;
+    padding: 14px 20px 0;
+
+    &:hover {
+      background-color: lighten(black, 20%);
+    }
+  }
+}

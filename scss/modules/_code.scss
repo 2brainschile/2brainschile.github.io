@@ -1,0 +1,29 @@
+.lang-label {
+    width: 100%;
+    background: whitesmoke;
+    color: grey;
+    font-family: Helvetica, Arial, sans-serif;
+    display: block;
+    padding: .1rem .5rem;
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+.highlight {
+    margin-bottom: 1.6rem;
+}
+
+
+pre {
+    margin-top: 0;
+    background: #282828;
+    border: 2px solid #282828;
+    overflow: auto;
+    padding: 1rem;
+    code {
+        background: inherit;
+        word-break: break-word;
+        border: none;
+        color: white;
+    }
+}
