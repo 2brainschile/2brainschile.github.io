@@ -1,6 +1,29 @@
+// From Foundation
+$code-color: #333 !default;
+$code-font-family: Consolas, 'Liberation Mono', Courier, monospace !default;
+$code-font-weight: normal;
+$code-background-color: scale-color($secondary-color, $lightness: 94%) !default;
+$code-border-size: 1px !default;
+$code-border-style: solid !default;
+$code-border-color: scale-color($code-background-color, $lightness: -10%) !default;
+$code-padding: rem-calc(2) rem-calc(5) rem-calc(1) !default;
+
+code {
+  font-family: $code-font-family;
+  font-weight: $code-font-weight;
+  color: $code-color;
+  background-color: $code-background-color;
+  border-width: $code-border-size;
+  border-style: $code-border-style;
+  border-color: $code-border-color;
+  padding: $code-padding;
+  border-radius: 3px;
+}
+// EndFrom
+
 .lang-label {
     width: 100%;
-    background: whitesmoke;
+    background: darken(#282828, 6%);
     color: grey;
     font-family: Helvetica, Arial, sans-serif;
     display: block;
@@ -15,15 +38,20 @@
 
 
 pre {
-    margin-top: 0;
-    background: #282828;
-    border: 2px solid #282828;
-    overflow: auto;
-    padding: 1rem;
-    code {
-        background: inherit;
-        word-break: break-word;
-        border: none;
-        color: white;
+  margin-top: 0;
+  background: #282828;
+  border: 2px solid #282828;
+  overflow: auto;
+  padding: 1rem;
+  code {
+    background: inherit;
+    border: none;
+    color: white;
+    word-break: break-word;
+    font-size: 16px;
+
+    @include breakpoint(max-width $iphone6-plus) {
+      word-break: normal;
     }
+  }
 }

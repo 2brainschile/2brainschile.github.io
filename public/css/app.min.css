@@ -2225,9 +2225,21 @@ body {
   color: #ae81ff;
 }
 
+code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+  color: #333;
+  background-color: #f3f3f3;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dadada;
+  padding: rem-calc(2) rem-calc(5) rem-calc(1);
+  border-radius: 3px;
+}
+
 .lang-label {
   width: 100%;
-  background: whitesmoke;
+  background: #191919;
   color: grey;
   font-family: Helvetica, Arial, sans-serif;
   display: block;
@@ -2250,9 +2262,16 @@ pre {
 
 pre code {
   background: inherit;
-  word-break: break-word;
   border: none;
   color: white;
+  word-break: break-word;
+  font-size: 16px;
+}
+
+@media (max-width: 414px) {
+  pre code {
+    word-break: normal;
+  }
 }
 
 @media (min-width: 515px) {
