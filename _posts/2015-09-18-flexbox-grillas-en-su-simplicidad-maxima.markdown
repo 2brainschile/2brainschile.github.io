@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cómo crear una práctica Paleta de Colores con Sass"
+title:  "Flexbox: Grillas en su simplicidad máxima"
 date:   2015-08-15 18:06:10
 author: alexplaza
 category: css
@@ -127,3 +127,7 @@ Lo que hicimos fue setear nuestra propia función para llamar a nuestra paleta d
 {% endhighlight %}
 
 Hemos terminado con nuestra paleta y está lista para ser llamada de forma simple en el css, podemos agregar los colores que queramos y siempre tener un orden fácil de recordar y mantener. Incluso en el desemparo de un equipo de diseño podemos mantener nuestra paleta de colores viva simplemente recordando que ``xx-dark`` es más oscuro que ``x-dark`` y colgarnos de algunas variables de Sass como ``lighten`` o ``darken`` para degradar nuestros colores en la espera del código Hexadecimal exacto.
+
+Check out the [Jekyll docs][jekyll]
+
+[jekyll]:      http://jekyllrb.com
