@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-hero {{ page.category }}" {% if page.mainimg %} style="background-image: url('{{ page.mainimg }}')" {% endif %}>
+  <header class="post-hero bg-{{ page.category }}" {% if page.mainimg %} style="background-image: url('{{ page.mainimg }}')" {% endif %}>
     {% if page.mainimg %}
       <div class="light-to-read"></div>
     {% endif %}
