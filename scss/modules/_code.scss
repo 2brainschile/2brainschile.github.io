@@ -48,6 +48,7 @@ pre {
     color: white;
     word-break: break-word;
     font-size: 16px;
+    padding: 0;
 
     @include breakpoint(max-width $iphone6-plus) {
       word-break: normal;

@@ -99,7 +99,7 @@ $sans-serif-alt: 'Varela Round', sans-serif;;
   $light-gray: #DDD !default;
   $base-font-color: $dark-gray !default;
 
-  max-width: $max-width - 400px;
+  max-width: $max-width - 390px;
   @include margin-center;
 
   @include breakpoint(max-width $large-screen) {
@@ -194,7 +194,7 @@ $sans-serif-alt: 'Varela Round', sans-serif;;
 }
 
 .the-comments {
-  max-width: $max-width - 400px;
+  max-width: $max-width - 390px;
   @include margin-center;
   margin-top: 30px;
   margin-bottom: 30px;
