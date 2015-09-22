@@ -192,3 +192,14 @@ $sans-serif-alt: 'Varela Round', sans-serif;;
   font-size: 1.2em;
   font-style: italic;
 }
+
+.the-comments {
+  max-width: $max-width - 400px;
+  @include margin-center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include breakpoint(max-width $large-screen) {
+    padding: 0 16px;
+  }
+}

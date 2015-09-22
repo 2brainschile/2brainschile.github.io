@@ -15,7 +15,7 @@ layout: default
           <div class="post-item-inner">
             <time class="post-item-inner__date">{{ post.date | date: "%b %-d, %Y" }}</time>
             <h2 class="post-item-inner__title">{{ post.title }}</h2>
-            {{ post.excerpt }}
+            {{ post.excerpt | truncatewords: 28 }}
           </div>
         </a>
       </li>
