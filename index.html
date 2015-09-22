@@ -8,9 +8,9 @@ layout: default
     {% for post in site.posts %}
       <li class="post-list__li flex-2 flex-3">
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-item">
-          <div class="post-item-img" style="background-image: url('{{ post.mainimg }}')">
-            <i class="icon-{{post.category}}"></i>
-            <div class="color-hover {{post.category}}"></div>
+          <div class="post-item-img bg-{{post.category}}" style="background-image: url('{{ post.mainimg }}')">
+            <div class="color-hover hover-{{post.category}}"></div>
+            <i class="icon-over-bg icon-{{post.category}}"></i>
           </div>
           <div class="post-item-inner">
             <time class="post-item-inner__date">{{ post.date | date: "%b %-d, %Y" }}</time>

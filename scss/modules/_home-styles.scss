@@ -1,3 +1,5 @@
+$post-item-h: 130px;
+
 .home {
   margin-top: 30px;
   max-width: $max-width;
@@ -27,12 +29,26 @@
   border: 1px solid pal(grey, xxxx-light);
   border-radius: 6px;
   overflow: hidden;
+
+  &:hover {
+    [class*="hover-"] {
+      opacity: .8;
+    }
+
+    .icon-over-bg {
+      @include transform(translateY(-4px));
+    }
+  }
 }
+
+[class*="hover-"] {
+  @include transition(opacity .3s ease-in);
+}
+
 
 .post-item-img {
   position: relative;
-  height: 130px;
-  width: 100%;
+  height: $post-item-h;
   background-position: center;
   background-size: cover;
 }
@@ -41,12 +57,32 @@
   position: absolute;
   width: 101%;
   height: 101%;
+  top: 0;
+}
+
+.icon-over-bg {
+  color: white;
+  font-size: 46px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: $post-item-h / 2.9;
+  z-index: 1;
+  @include transition(transform .3s ease-in);
 }
 
 @each $cat, $color in $category-palette {
-  .color-hover[class*="#{$cat}"] {
-    background: transparentize($color, .35);
+  .bg-#{$cat} {
+    background-color: $color;
   }
+
+  .hover-#{$cat} {
+    background-color: transparentize($color, .18);
+  }
+
+  // .color-#{$cat} {
+  //   color: $color;
+  // }
 }
 
 .post-item-inner {
