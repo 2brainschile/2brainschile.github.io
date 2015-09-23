@@ -44,7 +44,7 @@ $very-dark-grey: #515255;
 
 {% endhighlight %}
 
-WAT? Y eso que olvidamos algunas variaciones del gris oscuro, y pasamos por alto la posibilidad de que la web tenga más colores de corporativos, cada cuál con sus respectivas variaciones.
+WAT? Y eso que olvidamos algunas variaciones del gris oscuro, y pasamos por alto la posibilidad de que la web tenga más colores corporativos, cada cuál con sus respectivas variaciones.
 Pero no hay de qué preocuparse, de hecho, estamos de suerte porque con Sass podemos hacer uso de los Sass Maps(una especie de objeto de Sass), para ayudarnos a crear una paleta de colores mucho más práctica, más fácil de mantener y usar.
 
 Primero debemos crear nuestro mapa y dentro pondremos nuestros colores principales.
@@ -91,7 +91,7 @@ También estoy usando el ``xxx`` como mi identificador de grados pero perfectame
 
 Bueno, aún no podemos dar por terminada nuestra paleta de colores sin poder llamarla dentro de una propiedad ``background`` o ``color`` en nuestros estilos scss.
 
-Para llamar a un mapa de Sass en una propiedad css podemos hacer uso de la función nativa ``map-get`` algo así.
+Para llamar a un mapa de Sass en una propiedad css podemos hacer uso de la función nativa ``map-get`` algo así:
 
 {% highlight scss %}
 
@@ -112,7 +112,7 @@ Lo sé es horrible y poco práctico, por esto necesitamos escribir nuestra propi
 
 {% endhighlight %}
 
-Lo que hicimos fue setear nuestra propia función para llamar a nuestra paleta de colores. Le llamé ``pal`` ya que necesitamos un nombre corto si vamos a estar llamándola repetidas veces en nuestros estilos. Y le setee la variación de color como base cosa que si llamamos a nuestro colo base no tengamos que pasarle nada más que la primera clave. Ejemplos.
+Lo que hicimos fue setear nuestra propia función para llamar a nuestra paleta de colores. Le llamé ``pal`` porque necesitamos un nombre corto si vamos a estar llamándola repetidas veces en nuestros estilos. También setee la variación de color por defecto como ``base``, así cuando llamemos a nuestro color base, no será necesario pasarle otra palabra clave a nuestra función. Ejemplos:
 
 {% highlight scss %}
 
