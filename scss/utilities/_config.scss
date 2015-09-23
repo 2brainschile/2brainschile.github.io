@@ -3,9 +3,10 @@
 //==================================
 $primary-color		: #D1202A;
 $secondary-color	: #333333;
-$grey				: #333333;
+$grey							: #333333;
 
-$white				: #FEFFFF;
+$white						: #FEFFFF;
+$black						: #000000;
 
 //==================================
 //			PALETTE
@@ -43,12 +44,13 @@ $palette: (
 
 
 $category-palette: (
-  html: #F8C300,
-  javascript: #F08D3C,
-  css: #EF4844,
-  mobile: #124061,
-  ux: #1BB0CE,
-	arduino: #00979D
+  html: #39ADD1,
+  javascript: #C25975,
+  css: #3079AB,
+  mobile: #5CB860,
+  ux: #E59A13,
+	arduino: #2C9676,
+	sketch: #F0A540
 );
 
 

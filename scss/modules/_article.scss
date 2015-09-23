@@ -8,7 +8,6 @@ $sans-serif-alt: 'Varela Round', sans-serif;;
   position: relative;
   width: 100%;
   text-align: center;
-  background-color: pal(grey, xxx-light);
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -99,7 +98,7 @@ $sans-serif-alt: 'Varela Round', sans-serif;;
   $light-gray: #DDD !default;
   $base-font-color: $dark-gray !default;
 
-  max-width: $max-width - 400px;
+  max-width: $max-width - 390px;
   @include margin-center;
 
   @include breakpoint(max-width $large-screen) {
@@ -191,4 +190,15 @@ $sans-serif-alt: 'Varela Round', sans-serif;;
   font-family: $sans-serif-alt;
   font-size: 1.2em;
   font-style: italic;
+}
+
+.the-comments {
+  max-width: $max-width - 390px;
+  @include margin-center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include breakpoint(max-width $large-screen) {
+    padding: 0 16px;
+  }
 }

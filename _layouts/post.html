@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-hero {{ page.category }}" {% if page.mainimg %} style="background-image: url('{{ page.mainimg }}')" {% endif %}>
+  <header class="post-hero bg-{{ page.category }}" {% if page.mainimg %} style="background-image: url('{{ page.mainimg }}')" {% endif %}>
     {% if page.mainimg %}
       <div class="light-to-read"></div>
     {% endif %}
@@ -29,4 +29,22 @@ layout: default
   <article class="the-content">
     {{ content }}
   </article>
+
+  <div class="the-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = '2brainsblog';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </noscript>
+  </div>
 </div>

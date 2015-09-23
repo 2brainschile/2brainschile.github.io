@@ -5,4 +5,7 @@
 	@return map-get(map-get($palette, $pal-key), $shade);
 }
 
-
+// Separate category palette
+// @function cat-pal($pal-key, $shade: 'base') {
+// 	@return map-get(map-get($category-palette, $pal-key), $shade);
+// }

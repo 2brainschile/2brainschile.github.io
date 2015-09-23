@@ -26,8 +26,24 @@ authors:
 
   enrique:
     name: Enrique
-    avatar: /public/statics/authors/alexplaza.png    
+    avatar: /public/statics/authors/enrique.png    
     email: enrique@2brains.cl
+    web: NA
+    twitter: NA
+    github: NA
+
+  sabino:
+    name: Sabino
+    avatar: /public/statics/authors/sabino.png    
+    email: sabino@2brains.cl
+    web: NA
+    twitter: NA
+    github: NA
+
+  franco:
+    name: Franco
+    avatar: /public/statics/authors/sabino.png    
+    email: sabino@2brains.cl
     web: NA
     twitter: NA
     github: NA
